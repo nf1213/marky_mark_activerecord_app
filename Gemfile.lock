@@ -17,6 +17,7 @@ GEM
     arel (5.0.1.20140414130214)
     backports (3.6.4)
     builder (3.2.2)
+    colored (1.2)
     i18n (0.6.11)
     json (1.8.1)
     minitest (5.4.3)
@@ -51,6 +52,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  colored
   pg
   rake
   sinatra

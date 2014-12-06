@@ -1,0 +1,26 @@
+<% if @result.length > 1 %>
+  <div class="panel callout radius pink">
+    <h2><%= @result.pop %></h2>
+    <p>was in</p>
+  </div>
+  <ol>
+    <% @result.each do |res| %>
+      <li>
+        <div class="panel callout radius">
+          <h4><%= res[0] %></h4>
+          <p> with</p>
+        </div>
+        <div class="panel callout radius pink">
+          <h2><%= res[1] %></h2>
+          <% unless res[1] == "Mark Wahlberg" %>
+            <p>was in</p>
+          <% end %>
+        </div>
+      </li>
+    <% end %>
+  </ol>
+<% else %>
+  <% @result.each do |res| %>
+    <p><%= res %></p>
+  <% end %>
+<% end %>

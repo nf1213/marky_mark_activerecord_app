@@ -1,0 +1,7 @@
+<% if @result.empty? %>
+  <p>No search results found.</p>
+<% else %>
+  <% @result.each do |res| %>
+    <p><a href="/<%= res.id %>"><%= res.name %></a></p>
+  <% end %>
+<% end %>

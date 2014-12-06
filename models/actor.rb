@@ -21,4 +21,13 @@ class Actor < ActiveRecord::Base
     end
     prev
   end
+
+  def find_connection
+    movies.each do |movie|
+      if movie.actors.to_a.include?(self) &&
+        movie.actors.to_a.include?(self.previous_actor)
+        return movie.title
+      end
+    end
+  end
 end
