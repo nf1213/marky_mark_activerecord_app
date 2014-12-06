@@ -5912,3 +5912,17 @@ th.hide-for-touch {
   background-color: #F5DAF0;
   border-color: #FAB6EE;
 }
+
+img {
+  max-height: 225px;
+  max-width: 225px;
+}
+
+ol {
+  font-size: 40px;
+  padding: 30px;
+}
+
+.top-bar {
+  background: #192C5E;
+}
