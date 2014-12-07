@@ -7,4 +7,4 @@ gem 'sinatra-activerecord'
 gem 'pg'
 gem 'rake'
 
-gem 'colored'
+gem 'unicorn'

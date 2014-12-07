@@ -3,8 +3,6 @@ require 'sinatra'
 require 'sinatra/reloader'
 require "sinatra/activerecord"
 
-require 'colored'
-
 require_relative 'marky_mark_app'
 require_relative 'models/actor'
 

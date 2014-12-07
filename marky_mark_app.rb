@@ -3,8 +3,6 @@ require 'sinatra'
 require 'sinatra/reloader'
 require "sinatra/activerecord"
 
-require 'colored'
-
 require_relative 'models/actor'
 require_relative 'models/movie'
 require_relative 'models/cast_member'
