@@ -8,3 +8,5 @@ gem 'pg'
 gem 'rake'
 
 gem 'unicorn'
+
+gem 'heroku'
