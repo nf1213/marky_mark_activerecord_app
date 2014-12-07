@@ -14,14 +14,30 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.3.6)
     arel (5.0.1.20140414130214)
     backports (3.6.4)
     builder (3.2.2)
+    excon (0.42.1)
+    heroku (3.17.1)
+      heroku-api (~> 0.3.19)
+      launchy (>= 0.3.2)
+      multi_json (~> 1.10.1)
+      netrc (~> 0.7.7)
+      rest-client (= 1.6.7)
+      rubyzip (= 0.9.9)
+    heroku-api (0.3.21)
+      excon (~> 0.38)
+      multi_json (~> 1.8)
     i18n (0.6.11)
     json (1.8.1)
     kgio (2.9.2)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    mime-types (2.4.3)
     minitest (5.4.3)
     multi_json (1.10.1)
+    netrc (0.7.9)
     pg (0.17.1)
     rack (1.5.2)
     rack-protection (1.5.3)
@@ -30,6 +46,9 @@ GEM
       rack (>= 1.0)
     raindrops (0.13.0)
     rake (10.4.2)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rubyzip (0.9.9)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -57,6 +76,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  heroku
   pg
   rake
   sinatra
