@@ -13,7 +13,7 @@ require_relative 'models/cast_member'
 ## movies they have been in with other actors.
 ##
 ## COMMENTED CODE WAS USED TO POPULATE THE DATABASE WITH PATHS TO MARKY MARK
-## AND SHOULD BE SAVED IN CASE DATABASE NEEDS TO BE RECREATED
+## AND SHOULD BE SAVED IN CASE DATABASE NEEDS TO BE RECREATED.
 
 class MarkyMarkApp
   attr_reader :result
@@ -25,11 +25,11 @@ class MarkyMarkApp
     # Mark Wahlberg
     mrkymrk = graph.find(1841)
 
-    #graph.update_all(distance: 1000)
-    #graph.update_all(visited: false)
-    #graph.update_all(previous: nil)
+    # graph.update_all(distance: 1000)
+    # graph.update_all(visited: false)
+    # graph.update_all(previous: nil)
 
-    #mrkymrk.update(distance: 0)
+    # mrkymrk.update(distance: 0)
     begin
       target = graph.find(@target_actor_id)
       dijkstra(graph, mrkymrk, target)
@@ -62,21 +62,23 @@ class MarkyMarkApp
     #   unvisited = graph.where("visited = false")
     #   s = closest_actor(unvisited)
     #   s.neighbors.each do |id, n|
-    #     puts "Looking at nodes, this could take a while...".cyan
-    #     puts "Current: #{s.id}".yellow
-    #     puts "Neighbor: #{n.id}".yellow
+    #     puts "UNVISITED: #{unvisited.length}"
+    #     puts "Looking at nodes, this could take a while..."
+    #     puts "Current: #{s.id}"
+    #     puts "Neighbor: #{n.id}"
     #     dist = s.distance + 1
     #     if dist < n.distance
     #       n.update(distance: dist)
     #       n.update(previous: s.id)
     #     end
     #     # if n.id == t.id
-    #     #   puts "\nHERE WE GO!\n\n".red
-    #     #   puts "Actor: #{n.name}".cyan
+    #     #   puts "\nHERE WE GO!\n\n"
+    #     #   puts "Actor: #{n.name}"
     #     #   until n.previous_actor.nil?
-    #     #     puts "Actor: #{n.previous_actor.name}".cyan
+    #     #     puts "Actor: #{n.previous_actor.name}"
     #     #     n = n.previous_actor
     #     #   end
+    #     #   s.update(visited: true)
     #     #   exit(1)
     #     # else
     #       s.update(visited: true)
