@@ -6,6 +6,10 @@ require "sinatra/activerecord"
 require_relative 'marky_mark_app'
 require_relative 'models/actor'
 
+require 'active_record'
+
+ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'] || 'postgres://localhost/movies')
+
 get '/search' do
   input = params[:input]
   @result = Actor.where("name ILIKE ?", "%#{input}%").all
