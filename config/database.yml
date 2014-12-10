@@ -4,7 +4,7 @@ development:
   encoding: unicode
   database: movies
   pool: 5
-  username:
+  username: nf1213
   password:
 
 # Configure the database used when in the test environment
@@ -13,7 +13,7 @@ test:
   encoding: unicode
   database: movies
   pool: 5
-  username:
+  username: nf1213
   password:
 
 # Configure the database used when in the production environment
@@ -22,5 +22,5 @@ production:
   encoding: unicode
   database: movies
   pool: 5
-  username:
+  username: nf1213
   password:
