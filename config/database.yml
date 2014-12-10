@@ -5,7 +5,7 @@ development:
   database: movies
   pool: 5
   username: nf1213
-  password:
+  password: pw
 
 # Configure the database used when in the test environment
 test:
@@ -14,7 +14,7 @@ test:
   database: movies
   pool: 5
   username: nf1213
-  password:
+  password: pw
 
 # Configure the database used when in the production environment
 production:
@@ -23,4 +23,4 @@ production:
   database: movies
   pool: 5
   username: nf1213
-  password:
+  password: pw
