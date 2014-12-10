@@ -1,6 +1,3 @@
-28 lines (19 sloc)  0.639 kb RawBlameHistory
-# config/unicorn.rb
-
 worker_processes Integer(ENV['WEB_CONCURRENCY'] || 3)
 timeout Integer(ENV['WEB_TIMEOUT'] || 15)
 preload_app true
